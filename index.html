@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Brilliant Diamond | Explore the Sinnoh Region</title>
+    <meta name="description"
+        content="Experience the nostalgia and adventure of Pokémon Brilliant Diamond. Explore the Sinnoh region, discover legendary Pokémon, and become the Champion!">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:wght@700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header id="main-header">
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="#home" class="logo-link">
+                    <span class="brilliant">Brilliant</span>
+                    <span class="diamond-wrapper">
+                        <span class="diamond-text">Diamond</span>
+                    </span>
+                </a>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link-item active">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link-item dropdown-toggle">Features <i class="chevron-icon"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#features">New & Classic Features</a></li>
+                        <li><a href="#technology">Technology</a></li>
+                    </ul>
+                </li>
+
+                <!-- World Dropdown -->
+                <li class="dropdown">
+                    <a href="#" class="nav-link-item dropdown-toggle">Explore Sinnoh <i class="chevron-icon"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#character-select">Trainers</a></li>
+                        <li><a href="#key-figures">Key Figures</a></li>
+                        <li><a href="#underground">Grand Underground</a></li>
+                        <li><a href="#contest">Super Contests</a></li>
+                    </ul>
+                </li>
+
+                <!-- Compete Dropdown -->
+                <li class="dropdown">
+                    <a href="#" class="nav-link-item dropdown-toggle">Challenges <i class="chevron-icon"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#gym-leaders">Gym Leaders</a></li>
+                        <li><a href="#galactic">Team Galactic</a></li>
+                        <li><a href="#league">Sinnoh League</a></li>
+                    </ul>
+                </li>
+
+                <!-- Lore Dropdown -->
+                <li class="dropdown">
+                    <a href="#" class="nav-link-item dropdown-toggle">Database <i class="chevron-icon"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#pokemon">Sinnoh Pokémon</a></li>
+                        <li><a href="#dialga-lore">Dialga Lore</a></li>
+                        <li><a href="#lake-guardians">Lake Guardians</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="header-actions">
+                <button class="cta-button" id="preorder-btn">Pre-order Now</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Pre-order Modal -->
+    <div id="preorder-modal" class="modal hidden">
+        <div class="modal-content preorder-content">
+            <span class="close-modal close-preorder">&times;</span>
+            <div class="preorder-visual">
+                <div class="game-box">
+                    <div class="box-front">
+                        <img src="images/box_diamond.jpg" alt="Game Case" id="preorder-box-art">
+                    </div>
+                </div>
+            </div>
+            <h2>Secure Your Adventure</h2>
+            <p>Ready to return to Sinnoh?</p>
+            <div class="price-tag">
+                <span class="currency">$</span>59.99
+            </div>
+            <button class="btn btn-primary checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Myth Modal -->
+    <div id="myth-modal" class="modal hidden">
+        <div class="modal-content myth-modal-content">
+            <span class="close-modal close-myth">&times;</span>
+            <div class="myth-container">
+                <div class="myth-header">
+                    <h2>Sinnoh Mythologies</h2>
+                    <p class="myth-subtitle">From the ancient Canalave Library Manuscripts</p>
+                </div>
+                <hr class="myth-divider">
+                <div class="myth-body">
+                    <p class="myth-intro">Three Pokémon there were. Into the lakes they dove. Deep, deep, beyond the
+                        reach of light, they settled themselves. Keeping the balance of Sinnoh's spirit.</p>
+                    <p class="myth-text">One represents <span class="myth-highlight">Knowledge</span>, sharpening the
+                        minds of humans. One represents <span class="myth-highlight">Emotion</span>, bringing hearts
+                        together in joy and sorrow. And one represents <span class="myth-highlight">Willpower</span>,
+                        granting the strength to overcome any obstacle.</p>
+                    <p class="myth-climax">Should the spear pillar crumble, the dragon of time shall awaken.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section id="home">
+            <div class="hero-content container">
+                <h1 class="fade-in">A Timeless Adventure <br><span class="highlight">Reborn</span></h1>
+                <p class="fade-in-delayed">Return to the Sinnoh region and experience the beloved story of Pokémon
+                    Diamond Version like never before.</p>
+                <div class="hero-btns fade-in-delayed">
+                    <a href="#features" class="btn btn-primary">Explore Features</a>
+                    <button id="myth-btn" class="btn btn-secondary">Read Sinnoh Myths</button>
+                </div>
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="diamond-background">
+                <div class="sparkle s1"></div>
+                <div class="sparkle s2"></div>
+                <div class="sparkle s3"></div>
+            </div>
+        </section>
+
+        <section id="features" class="container">
+            <h2 class="section-title">New & Classic Features</h2>
+            <div class="features-grid">
+                <div class="feature-card" id="feat-underground">
+                    <img src="images/Grand_Underground.avif" alt="Grand Underground" class="card-visual">
+                    <div class="card-icon">⛏️</div>
+                    <h3>Grand Underground</h3>
+                    <p>Dig for treasures, build your secret base, and discover Pokémon Hideaways where rare species
+                        await.</p>
+                </div>
+                <div class="feature-card" id="feat-contest">
+                    <img src="images/Super_Contest_Show.jpg" alt="Contest Shows" class="card-visual">
+                    <div class="card-icon">✨</div>
+                    <h3>Super Contest Shows</h3>
+                    <p>Show off your Pokémon's style and talent in rhythm-based performances to win the crowd's heart.
+                    </p>
+                </div>
+                <div class="feature-card" id="feat-follow">
+                    <img src="images/Walk_Together.jpg" alt="Walk Together" class="card-visual">
+                    <div class="card-icon">🐾</div>
+                    <h3>Walk Together</h3>
+                    <p>Choose your favorite Pokémon to walk behind you as you explore the vast Sinnoh region.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modern Technology Section -->
+        <section id="technology" class="tech-section">
+            <div class="container">
+                <div class="section-badge badge-tech">Advanced Sinnoh Tech</div>
+                <h2 class="section-title">Modern Technology</h2>
+                <p class="section-subtitle">Cutting-edge innovations to aid your Pokémon journey across Sinnoh.</p>
+                <div class="tech-grid">
+                    <div class="tech-card">
+                        <div class="tech-icon">
+                            <img src="images/Pokétch.jpg" alt="Pokétch Icon" class="tech-icon-img" height="150px">
+                        </div>
+                        <h3>Pokétch</h3>
+                        <p>A multifunctional digital watch with apps including Pokedex, map, clock, calculator, and
+                            more. Essential for any modern trainer exploring Sinnoh.</p>
+                    </div>
+                    <div class="tech-card">
+                        <div class="tech-icon">
+                            <img src="images/trainercard.jpg" alt="Trainer Card Icon" class="tech-icon-img"
+                                height="150px">
+                        </div>
+                        <h3>Trainer Card</h3>
+                        <p>Your official identification as a Pokémon trainer. Track your achievements, badges earned,
+                            and progress through your journey to become Champion.</p>
+                    </div>
+                    <div class="tech-card">
+                        <div class="tech-icon">
+                            <img src="images/Pokémart_Network.jpg" alt="Pokémart Icon" class="tech-icon-img"
+                                height="150px">
+                        </div>
+                        <h3>Pokémart Network</h3>
+                        <p>A nationwide retail chain offering Poké Balls, healing items, vitamins, and specialty
+                            equipment to trainers in every major city across Sinnoh.</p>
+                    </div>
+                    <div class="tech-card">
+                        <div class="tech-icon">
+                            <img src="images/Pokémon_Storage_System.jpg" alt="Pokémon Storage System Icon"
+                                class="tech-icon-img" height="150px">
+                        </div>
+                        <h3>Pokémon Storage System</h3>
+                        <p>Advanced digital boxes for storing and organizing your Pokémon collection. Managed by PC
+                            systems throughout Sinnoh for easy access anywhere.</p>
+                    </div>
+                    <div class="tech-card">
+                        <div class="tech-icon">
+                            <img src="images/Poké dex.jpg" alt="Pokédex Icon" class="tech-icon-img" height="150px">
+                        </div>
+                        <h3>Pokédex</h3>
+                        <p>An encyclopedic digital device recording data on every Pokémon species encountered.
+                            Professors Rowan's assignment for advanced trainers to complete.</p>
+                    </div>
+                    <div class="tech-card">
+                        <div class="tech-icon">
+                            <img src="images/Poffin_Cooking_System.jpg" alt="Poffin Cooking System Icon"
+                                class="tech-icon-img" height="150px">
+                        </div>
+                        <h3>Poffin Cooking System</h3>
+                        <p>Combine berries to create Poffins that enhance your Pokémon's stats and appeal for contests.
+                            A unique Sinnoh specialty for competitive trainers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="character-select" class="container">
+            <h2 class="section-title">Begin Your Journey</h2>
+            <p class="section-subtitle">Select your trainer and customize your name.</p>
+
+            <div class="character-grid">
+                <div class="character-card" data-character="dawn">
+                    <div class="char-img-container">
+                        <img src="images/dawn.png" alt="Dawn" class="char-img">
+                    </div>
+                    <div class="char-info">
+                        <div class="name-display">
+                            <span class="char-name" id="dawn-name">Dawn</span>
+                            <button class="edit-name-btn" title="Edit Name">✏️</button>
+                        </div>
+                        <p class="char-title">The Brilliant Girl</p>
+                    </div>
+                </div>
+
+                <div class="character-card" data-character="lucas">
+                    <div class="char-img-container">
+                        <img src="images/lucas_transparent.png" alt="Lucas" class="char-img">
+                    </div>
+                    <div class="char-info">
+                        <div class="name-display">
+                            <span class="char-name" id="lucas-name">Lucas</span>
+                            <button class="edit-name-btn" title="Edit Name">✏️</button>
+                        </div>
+                        <p class="char-title">The Shining Boy</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Name Edit Modal -->
+            <div id="name-modal" class="modal hidden">
+                <div class="modal-content">
+                    <h3>Change your name</h3>
+                    <input type="text" id="name-input" maxlength="12" placeholder="Enter new name...">
+                    <div class="modal-btns">
+                        <button id="cancel-name" class="btn btn-secondary">Cancel</button>
+                        <button id="save-name" class="btn btn-primary">Save</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Figures Section -->
+        <section id="key-figures" class="container">
+            <h2 class="section-title">Key Figures</h2>
+            <p class="section-subtitle">Important trainers and allies you'll meet throughout your journey.</p>
+            <div class="characters-grid">
+                <div class="character-card featured-card">
+                    <div class="char-img-container">
+                        <img src="images/Barry.png" alt="Barry" class="char-img">
+                    </div>
+                    <div class="char-info">
+                        <h3>Barry</h3>
+                        <p class="char-title">Your Rival</p>
+                        <p class="char-description">A competitive and ambitious trainer who becomes your rival
+                            throughout your journey. His aggressive battle style and determination make him a formidable
+                            opponent.</p>
+                    </div>
+                </div>
+
+                <div class="character-card featured-card">
+                    <div class="char-img-container">
+                        <img src="images/Professor_Rowan.png" alt="Professor Rowan" class="char-img">
+                    </div>
+                    <div class="char-info">
+                        <h3>Professor Rowan</h3>
+                        <p class="char-title">Pokédex Professor</p>
+                        <p class="char-description">The esteemed professor of Pokémon research and creator of the
+                            Pokédex. He tasks you with completing the Pokédex as you explore the Sinnoh region.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pokemon" class="starters-section">
+            <div class="container">
+                <h2 class="section-title">Choose Your Partner</h2>
+                <div class="starters-grid">
+                    <div class="starter-card starter-grass" data-pokemon="turtwig">
+                        <div class="pokemon-img">
+                            <img src="images/turtwig.png" alt="Turtwig">
+                        </div>
+                        <h3>Turtwig</h3>
+                        <span class="type grass">Grass</span>
+                    </div>
+                    <div class="starter-card starter-fire" data-pokemon="chimchar">
+                        <div class="pokemon-img">
+                            <img src="images/chimchar.png" alt="Chimchar">
+                        </div>
+                        <h3>Chimchar</h3>
+                        <span class="type fire">Fire</span>
+                    </div>
+                    <div class="starter-card starter-water" data-pokemon="piplup">
+                        <div class="pokemon-img">
+                            <img src="images/piplup.png" alt="Piplup">
+                        </div>
+                        <h3>Piplup</h3>
+                        <span class="type water">Water</span>
+                    </div>
+                </div>
+
+                <div id="starter-details" class="starter-details hidden">
+                    <div class="details-content">
+                        <h3 id="details-name">Name</h3>
+                        <p id="details-text">Description</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dialga Legendary Information Section -->
+        <section id="dialga-lore" class="legendary-section">
+            <div class="container">
+                <div class="section-badge badge-legendary">Sinnoh Lore Deck</div>
+                <h2 class="section-title">The Temporal Deity: Dialga</h2>
+                <div class="legendary-wrapper">
+                    <div class="legendary-image-box">
+                        <img src="images/Dialga.webp" alt="Dialga" class="legendary-img">
+                    </div>
+                    <div class="legendary-info-box">
+                        <div class="type-tags">
+                            <span class="type steel">Steel</span>
+                            <span class="type dragon">Dragon</span>
+                        </div>
+                        <div class="lore-tab-content">
+                            <h3>History & Origin</h3>
+                            <p>According to myths found in ancient Sinnoh structures, Dialga was created by the original
+                                entity alongside Palkia and Giratina. When Dialga came into being, it is said that the
+                                flow of time began its continuous journey forward. It commands temporal lines and
+                                remains asleep in a dimension completely detached from reality.</p>
+
+                            <h3>Chemistry & Typings</h3>
+                            <p>Unlike common Dragon types exposed to ice and fairy weaknesses, Dialga possesses a unique
+                                metallic composition. Its part Steel structural profile alters its molecular defenses,
+                                rendering structural armor that counters traditional dragon weaknesses. It stands as a
+                                resilient sovereign capable of processing timelines like clockwork mechanics.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lake Guardians Section -->
+        <section id="lake-guardians" class="guardians-section">
+            <div class="container">
+                <div class="section-badge badge-guardians">The Deep Lake Keepers</div>
+                <h2 class="section-title">The Lake Trio</h2>
+                <p class="section-subtitle">Sinnoh's mythical guardians created to balance the spirit of humanity.</p>
+
+                <div class="guardians-wrapper">
+                    <div class="guardians-image-block">
+                        <img src="images/Uxie-Mesprit-Azelf.webp" alt="Uxie, Mesprit, and Azelf" class="trio-img">
+                    </div>
+                    <div class="guardians-cards-grid">
+                        <!-- Uxie -->
+                        <div class="guardian-subcard gold-glow">
+                            <div class="guardian-header">
+                                <h3>Uxie</h3>
+                                <span class="type psychic">Psychic</span>
+                            </div>
+                            <p class="guardian-meta"><strong>The Being of Knowledge</strong> | Lake Acuity</p>
+                            <p class="guardian-desc">Known as the bringer of wisdom, it is said that its emergence gave
+                                humanity the intellect to solve problems and improve their lives. It keeps its eyes
+                                strictly closed, as myth says looking into them wipes away one's memory instantly.</p>
+                        </div>
+
+                        <!-- Mesprit -->
+                        <div class="guardian-subcard pink-glow">
+                            <div class="guardian-header">
+                                <h3>Mesprit</h3>
+                                <span class="type psychic">Psychic</span>
+                            </div>
+                            <p class="guardian-meta"><strong>The Being of Emotion</strong> | Lake Verity</p>
+                            <p class="guardian-desc">This playful guardian taught humans the nobility of sorrow, pain,
+                                and joy. Unlike the others, it leaves its lake cavern to playfully roam across the
+                                Sinnoh region once awakened, testing a trainer's heart.</p>
+                        </div>
+
+                        <!-- Azelf -->
+                        <div class="guardian-subcard blue-glow">
+                            <div class="guardian-header">
+                                <h3>Azelf</h3>
+                                <span class="type psychic">Psychic</span>
+                            </div>
+                            <p class="guardian-meta"><strong>The Being of Willpower</strong> | Lake Valor</p>
+                            <p class="guardian-desc">It endowed humans with the determination needed to face hardships.
+                                It maintains the world's internal balance by sleeping at the bottom of its lake; should
+                                it be harmed, it can immobilize a target's free will permanently.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gym-leaders" class="gym-section">
+            <div class="container">
+                <div class="section-badge badge-gym">Battle for Badges</div>
+                <h2 class="section-title">Sinnoh Gym Leaders</h2>
+                <p class="section-subtitle">Prove your strength against the region's experts to earn all 8 Gym Badges.
+                </p>
+
+                <div class="gym-grid">
+                    <div class="gym-card" data-leader="roark">
+                        <div class="gym-visual rock-bg">
+                            <img src="images/Roark.jpg" alt="Roark" class="gym-leader-img">
+                        </div>
+                        <div class="gym-info">
+                            <h4>Roark</h4>
+                            <p class="gym-town">Oreburgh City</p>
+                            <span class="type rock">Rock</span>
+                            <p class="gym-badge">💎 Coal Badge</p>
+                        </div>
+                    </div>
+                    <div class="gym-card" data-leader="gardenia">
+                        <div class="gym-visual grass-bg">
+                            <img src="images/Gardenia.jpg" alt="Gardenia" class="gym-leader-img">
+                        </div>
+                        <div class="gym-info">
+                            <h4>Gardenia</h4>
+                            <p class="gym-town">Eterna City</p>
+                            <span class="type grass">Grass</span>
+                            <p class="gym-badge">🌿 Forest Badge</p>
+                        </div>
+                    </div>
+                    <div class="gym-card" data-leader="maylene">
+                        <div class="gym-visual fight-bg">
+                            <img src="images/Maylene.jpg" alt="Maylene" class="gym-leader-img">
+                        </div>
+                        <div class="gym-info">
+                            <h4>Maylene</h4>
+                            <p class="gym-town">Veilstone City</p>
+                            <span class="type fighting">Fighting</span>
+                            <p class="gym-badge">👊 Cobble Badge</p>
+                        </div>
+                    </div>
+                    <div class="gym-card" data-leader="wake">
+                        <div class="gym-visual water-bg">
+                            <img src="images/Crasher_Wake.jpg" alt="Crasher Wake" class="gym-leader-img">
+                        </div>
+                        <div class="gym-info">
+                            <h4>Crasher Wake</h4>
+                            <p class="gym-town">Pastoria City</p>
+                            <span class="type water">Water</span>
+                            <p class="gym-badge">💧 Fen Badge</p>
+                        </div>
+                    </div>
+                    <div class="gym-card" data-leader="fantina">
+                        <div class="gym-visual ghost-bg">
+                            <img src="images/Fantina.jpg" alt="Fantina" class="gym-leader-img">
+                        </div>
+                        <div class="gym-info">
+                            <h4>Fantina</h4>
+                            <p class="gym-town">Hearthome City</p>
+                            <span class="type ghost">Ghost</span>
+                            <p class="gym-badge">👻 Relic Badge</p>
+                        </div>
+                    </div>
+                    <div class="gym-card" data-leader="byron">
+                        <div class="gym-visual steel-bg">
+                            <img src="images/Byron.jpg" alt="Byron" class="gym-leader-img">
+                        </div>
+                        <div class="gym-info">
+                            <h4>Byron</h4>
+                            <p class="gym-town">Canalave City</p>
+                            <span class="type steel">Steel</span>
+                            <p class="gym-badge">⚙️ Mine Badge</p>
+                        </div>
+                    </div>
+                    <div class="gym-card" data-leader="candice">
+                        <div class="gym-visual ice-bg">
+                            <img src="images/Candice.jpg" alt="Candice" class="gym-leader-img">
+                        </div>
+                        <div class="gym-info">
+                            <h4>Candice</h4>
+                            <p class="gym-town">Snowpoint City</p>
+                            <span class="type ice">Ice</span>
+                            <p class="gym-badge">❄️ Icicle Badge</p>
+                        </div>
+                    </div>
+                    <div class="gym-card" data-leader="volkner">
+                        <div class="gym-visual electric-bg">
+                            <img src="images/Volkner.jpg" alt="Volkner" class="gym-leader-img">
+                        </div>
+                        <div class="gym-info">
+                            <h4>Volkner</h4>
+                            <p class="gym-town">Sunyshore City</p>
+                            <span class="type electric">Electric</span>
+                            <p class="gym-badge">⚡ Beacon Badge</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Galactic Section -->
+        <section id="galactic" class="galactic-section">
+            <div class="container">
+                <div class="section-badge badge-galactic">Antagonists</div>
+                <h2 class="section-title">Team Galactic</h2>
+                <p class="section-subtitle">A mysterious organization seeking out the power of mythic dimensions to
+                    alter reality itself.</p>
+
+                <!-- Cyrus - Leader (Top Hierarchy) -->
+                <div class="galactic-hierarchy-title">
+                    <h4>Leader</h4>
+                </div>
+                <div class="galactic-leader">
+                    <div class="team-card boss leader-featured">
+                        <div class="team-img-wrap">
+                            <img src="images/Cyrus.png" alt="Cyrus" class="team-member-img">
+                        </div>
+                        <h3>Cyrus</h3>
+                        <span class="rank-tag title-boss">Organization Leader</span>
+                        <p>Driven by extreme ideology, his grand objective is to eradicate emotions and engineer a
+                            clean, flawless new world universe using legendary powers.</p>
+                    </div>
+                </div>
+
+                <!-- Commanders (Second Hierarchy) -->
+                <div class="galactic-hierarchy-title">
+                    <h4>Elite Commanders</h4>
+                </div>
+                <div class="galactic-grid commanders-grid">
+                    <div class="team-card">
+                        <div class="team-img-wrap">
+                            <img src="images/Mars.png" alt="Mars" class="team-member-img">
+                        </div>
+                        <h3>Mars</h3>
+                        <span class="rank-tag">Commander</span>
+                        <p>Fiercely aggressive and deeply loyal, Mars heads up major resource raids across Sinnoh's
+                            valley power plants with fierce battle habits.</p>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-img-wrap">
+                            <img src="images/Jupiter.png" alt="Jupiter" class="team-member-img">
+                        </div>
+                        <h3>Jupiter</h3>
+                        <span class="rank-tag">Commander</span>
+                        <p>Carrying a cold and stoic temperament, she uses methodical battle tactics to secure the
+                            mythic lake entities needed for their machine projects.</p>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-img-wrap">
+                            <img src="images/Saturn.png" alt="Saturn" class="team-member-img">
+                        </div>
+                        <h3>Saturn</h3>
+                        <span class="rank-tag">Commander</span>
+                        <p>Overseeing base facilities and operations from Veilstone HQ, Saturn manages core system
+                            deployments to keep Cyrus's plans moving smoothly.</p>
+                    </div>
+                </div>
+
+                <!-- Grunts (Third Hierarchy) -->
+                <div class="galactic-hierarchy-title">
+                    <h4>Foot Soldiers</h4>
+                </div>
+                <div class="galactic-grid grunts-grid">
+                    <!-- Team Galactic Grunt Card -->
+                    <div class="team-card grunt-card" id="galactic-grunt">
+                        <div class="team-img-wrap">
+                            <!-- You can use an image like galactic_grunt.png if you have one, or keep it themed -->
+                            <img src="images/Grunts.jpg" alt="Team Galactic Grunt" class="team-member-img"
+                                onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                            <div class="grunt-fallback-avatar" style="display:none; font-size: 4rem;">👥</div>
+                        </div>
+                        <h3>Galactic Grunts</h3>
+                        <span class="rank-tag title-grunt">Foot Soldiers</span>
+                        <p>The rank-and-file grunts tasked with gathering energy, stealing fossils, and stalling
+                            trainers. They usually have no idea what Cyrus’s actual plan is.</p>
+                        <div class="grunt-interaction">
+                            <button class="btn btn-secondary grunt-talk-btn"
+                                style="padding: 0.4rem 1rem; font-size: 0.8rem; margin-top: 1rem; width: 100%;">Interrogate
+                                Grunt</button>
+                            <p class="grunt-dialogue hidden" id="grunt-text">"..."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sinnoh League Section -->
+        <section id="league" class="league-section">
+            <div class="container">
+                <div class="section-badge badge-league">The Elite Challenge</div>
+                <h2 class="section-title">The Sinnoh League</h2>
+                <p class="section-subtitle">Defeat the Elite Four and challenge the Champion to rewrite your name into
+                    the Hall of Fame.</p>
+
+                <div class="champion-showcase">
+                    <div class="champ-card">
+                        <div class="champ-visual-wrap">
+                            <img src="images/cynthia.png" alt="Champion Cynthia" class="champ-img">
+                        </div>
+                        <div class="champ-info-panel">
+                            <span class="champ-tag">League Champion</span>
+                            <h3>Cynthia</h3>
+                            <p class="champ-desc">Sinnoh's brilliant archeologist and reigning champion. She tests
+                                challengers using a meticulously balanced team anchored by her iconic Garchomp.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="elite-four-row">
+                    <div class="elite-card">
+                        <div class="elite-visual bug-elite-bg">
+                            <img src="images/aaron.png" alt="Aaron" class="elite-img">
+                        </div>
+                        <h4>Aaron</h4>
+                        <span class="type bug">Bug Type</span>
+                    </div>
+                    <div class="elite-card">
+                        <div class="elite-visual ground-elite-bg">
+                            <img src="images/bertha.png" alt="Bertha" class="elite-img">
+                        </div>
+                        <h4>Bertha</h4>
+                        <span class="type ground">Ground Type</span>
+                    </div>
+                    <div class="elite-card">
+                        <div class="elite-visual fire-elite-bg">
+                            <img src="images/flint.png" alt="Flint" class="elite-img">
+                        </div>
+                        <h4>Flint</h4>
+                        <span class="type fire">Fire Type</span>
+                    </div>
+                    <div class="elite-card">
+                        <div class="elite-visual psychic-elite-bg">
+                            <img src="images/lucian.png" alt="Lucian" class="elite-img">
+                        </div>
+                        <h4>Lucian</h4>
+                        <span class="type psychic">Psychic Type</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Grand Underground Section -->
+        <section id="underground" class="underground-section">
+            <div class="container">
+                <div class="section-badge">Explore Deep Below</div>
+                <h2 class="section-title">The Grand Underground</h2>
+                <p class="section-subtitle">A sprawling subterranean world awaits right beneath your feet.</p>
+                <div class="underground-grid">
+                    <div class="underground-card">
+                        <div class="ug-card-img-container">
+                            <img src="images/Excavate_Treasures.jpg" alt="Fossil Excavation" class="ug-content-img">
+                        </div>
+                        <div class="ug-info-content">
+                            <div class="ug-icon">⛏️</div>
+                            <h3>Fossil Excavation</h3>
+                            <p>Use your hammer and pickaxe to extract precious fossils, rare shards, and mysterious
+                                statues buried deep within the rock walls.</p>
+                        </div>
+                    </div>
+                    <div class="underground-card highlight">
+                        <div class="ug-card-img-container">
+                            <img src="images/Grand_Underground.avif" alt="Pokémon Hideaways" class="ug-content-img">
+                        </div>
+                        <div class="ug-info-content">
+                            <div class="ug-icon">✨</div>
+                            <h3>Pokémon Hideaways</h3>
+                            <p>Discover distinct biomes containing various environments where unique wild Pokémon
+                                thrive, some of which can only be found here.</p>
+                        </div>
+                    </div>
+                    <div class="underground-card">
+                        <div class="ug-card-img-container">
+                            <img src="images/secretbases.jpg" alt="Secret Bases" class="ug-content-img">
+                        </div>
+                        <div class="ug-info-content">
+                            <div class="ug-icon">🏠</div>
+                            <h3>Secret Bases</h3>
+                            <p>Create a personal retreat inside the cavern wall using a Digger Drill. Decorate it with
+                                statues to influence which wild species spawn nearby.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="underground-promo">
+                    <div class="promo-text">
+                        <h3>Ready to spelunk?</h3>
+                        <p>Get your Explorer Kit from the Underground Man in Eterna City to access the underground grid
+                            network anytime.</p>
+                    </div>
+                    <div class="depth-meter">
+                        <span class="depth-label">Current Depth</span>
+                        <span class="depth-value">1,500</span>
+                        <span class="depth-unit">meters</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Re-designed Contest Section -->
+        <section id="contest" class="contest-section-redesign">
+            <div class="container">
+                <div class="section-badge badge-contest">Rhythm Mini-Game</div>
+                <h2 class="section-title">Super Contest Shows</h2>
+                <p class="section-subtitle">Perform to the rhythm of the music track, hit the note zones perfectly, and
+                    charm the audience judges.</p>
+
+                <div class="contest-stage-card">
+                    <div class="stage-header">
+                        <div class="stage-title-text">🎵 Sinnoh Ballad Arena</div>
+                        <div class="score-board">SCORE: <span id="contest-score">00000</span></div>
+                    </div>
+                    <div class="rhythm-game-track" id="rhythm-mini">
+                        <div class="beat-target-line">
+                            <div class="target-glow"></div>
+                        </div>
+                        <div class="moving-note-node" id="note-1"></div>
+                    </div>
+                    <div class="stage-controls">
+                        <p class="track-hint">Click inside the track zone below when the node passes over the glowing
+                            target frame!</p>
+                        <button class="btn btn-primary performance-action-btn" id="perform-tap-btn">TAP PERFORMANCE
+                            BEAT</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <span class="brilliant">Brilliant</span><span class="diamond">Diamond</span>
+            </div>
+            <p>&copy; 2026 Pokémon. &copy; 1995-2026 Nintendo/Creatures Inc./GAME FREAK inc.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
